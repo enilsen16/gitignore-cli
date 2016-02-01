@@ -6,6 +6,7 @@
   "dependencies": {
     "optionator": "^0.8.1",
     "prelude-ls": "^1.1.2",
+    "request": "^2.69.0",
     "source-map": "^0.5.3"
   },
   "devDependencies": {
