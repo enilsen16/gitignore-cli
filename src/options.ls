@@ -11,3 +11,7 @@ module.exports = optionator do
         alias: 'r'
         type: 'String'
         description: 'Run the program'
+      * option: 'list'
+        alias: 'l'
+        type:'Boolean'
+        description: 'List all available languages'
