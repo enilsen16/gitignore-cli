@@ -16,11 +16,11 @@ execute = (args) ->
     if process.argv[3]
       create.list!then (res) ->
         array-of-languages = _.split ',' res
-
-        if _.elem-index process.argv[3], array-of-languages
-          console.log "Yes this is a valid language"
+        languages = _.split ',' process.argv[3]
+        if _.empty(_.difference languages, array-of-languages)
+          console.log "Yes, those are all valid languages"
         else
-          console.log "This is not a valid language"
+          console.log "One or more of those languages are invalid"
     else
       create.list!then (res) ->
         console.log res
