@@ -1,20 +1,22 @@
 {
-  "name": "ls-gitignore",
+  "name": "gitignore-cli",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "optionator": "^0.8.1",
-    "prelude-ls": "^1.1.2",
-    "request": "^2.69.0",
-    "source-map": "^0.5.3"
+    "request": "^2.69.0"
   },
   "devDependencies": {
-    "livescript": "^1.4.0"
+    "livescript": "^1.4.0",
+    "prelude-ls": "^1.1.2"
+  },
+  "bin": {
+    "ignore": "bin/gitignore"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "enilsen16",
+  "license": "MIT"
 }
