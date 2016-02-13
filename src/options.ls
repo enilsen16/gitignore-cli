@@ -1,7 +1,7 @@
 require! optionator
 
 module.exports = optionator do
-    prepend: 'Usage: gitignore [options]... [languages]'
+    prepend: 'Usage: ignore [options]... [languages]'
     options:
       * option: 'help'
         alias: 'h'
